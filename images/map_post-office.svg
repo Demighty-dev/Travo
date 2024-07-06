@@ -1,0 +1,10 @@
+<svg width="31" height="27" viewBox="0 0 31 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="map:post-office" clip-path="url(#clip0_422_1167)">
+<path id="Vector" d="M1.82342 4.32031C0 4.32031 0.91202 4.74097 1.82342 5.38627L15.5 14.4523L29.1766 5.41435C30.0892 4.76905 31 4.32031 29.1766 4.32031H1.82342ZM0 6.45115V19.8043C0 20.59 0.92256 21.6003 1.6523 21.6003H29.3477C30.0781 21.6003 31 20.59 31 19.8043V6.45115L15.5 16.7517L0 6.45115Z" fill="#1E1E1E"/>
+</g>
+<defs>
+<clipPath id="clip0_422_1167">
+<rect width="31" height="27" fill="white"/>
+</clipPath>
+</defs>
+</svg>

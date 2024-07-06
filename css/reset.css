@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+body {
+    font-family: "Inter";
+    background-color: #F6F4F3;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+:root {
+    --orange-color: rgb(255, 165, 0);
+    --secondary-color: rgb(255, 255, 255);
+    --darkorange-color: rgb(255, 140, 0);
+    --tertiary-color: rgb(0, 0, 0);
+    --quaternary-color: rgb(255, 255, 255);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #000;
+}
+
+.logo img {
+    width: 100px; 
+    cursor: pointer;
+}
+
+#btn {
+    font-size: 17px;
+    padding: 10px 30px;
+    background-color: var(--orange-color);
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#btn:hover {
+    background-color: var(--darkorange-color);
+    color: white;
+    transform: scale(1.05);
+}
+
+
+main {
+    margin-inline: 60px;
+    margin-bottom: 200px;
+}
+
+section {
+    margin-top: 50px;
+    width: 100%;
+}

@@ -1,0 +1,324 @@
+header {
+  position: relative;
+  height: 100svh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/image3.png") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  z-index: 2;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  padding-top: 10px;
+}
+
+.nav-links a {
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--orange-color);
+}
+
+.hero h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff !important;
+}
+
+.hero h1 span {
+  color: var(--orange-color);
+}
+
+.hero p {
+  font-size: 1.05rem;
+  margin-bottom: 60px;
+  color: #fff !important;
+}
+
+/* ======  POPULAR TOUR PLACES ====== */
+
+.Popular-tour h2 {
+    padding-bottom: 30px;
+    font-size: 2rem;
+}
+
+.section-one-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-one-card {
+    width: 400px;
+    overflow: hidden;
+}
+
+.section-one-card img {
+  width: 100%;
+}
+
+.section-one-card-body {
+  width: 180px;
+  padding: 20px 0;
+}
+
+.section-one-card-body h3 {
+  font-size: 1.5rem;
+}
+
+.section-one-card-body p {
+  font-size: 1.0625rem;
+  padding: 15px 0;
+}
+
+.section-one-card-body p:last-child {
+  width: 240px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-top: 20px;
+  color: var(--orange-color);
+}
+
+.section-one-card-body span {
+    text-decoration: line-through;
+    color: #000;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+
+/* OUR PROUD SPONSORS  */
+
+.sponsors-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.sponsors-wrapper h2 {
+    font-size: 1.6rem;
+}
+
+.sponsors-logo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.sponsors-logo img {
+    width: 150px;
+}
+
+
+/* WHO WE ARE  */
+
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-container .about-us-heading {
+    font-size: 1rem;
+    padding-bottom: 50px;
+}
+
+.about-us-wrapper {
+    display: flex;
+    gap: 80px;
+}
+
+.about-us-image {
+    position: relative;
+}
+
+.img-bg {
+    position: absolute;
+    width: 290px;
+    height: 340px;
+    border-radius: 11.679px;
+    background: #0E1E5E;
+    z-index: -1;
+}
+
+.about-us-image img {
+    height: 420px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.about-us-image > div:last-child {
+    position: absolute;
+    bottom: 25px;
+    width: 200px;
+    background-color: #fff;
+    padding: 15px 30px 12px 15px;
+    border-radius: 11.679px;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.about-us-image > div > h2{
+    font-size: 1.1rem;
+    padding-bottom: 4px;
+}
+
+.about-us-image > div > p{
+    font-size: .85rem;
+    font-weight: 550;
+}
+
+.about-us-text {
+    width: 400px;
+    font-weight: 400;
+}
+
+.about-us-text p{
+    text-wrap: wrap;
+    font-size: 1.06rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.about-us-text #btn{
+    float: right;
+}
+
+
+/* Our Features */
+
+.features {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.grid-item {
+    width: 350px;
+    background-color: #EFECEC;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-item img {
+    width: 35px;
+
+    height: auto;
+    margin-block: 30px;
+}
+
+.grid-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 1.0625rem;
+    color: #555;
+    padding-inline: 0 30px;
+}
+
+.grid-item .price {
+    color: orange;
+    font-weight: bold;
+}
+
+.grid-item .old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 10px;
+}
+
+
+/* TRAVEL HIGHLIGHTS */
+
+.video-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
+
+.play-button {
+    font-size: 4em;
+    color: orange;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.video-text {
+    font-size: 1.5em;
+    font-weight: bold;
+}
