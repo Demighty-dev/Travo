@@ -1,6 +1,6 @@
 header {
   position: relative;
-  height: 100vh;
+  height: 85vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/image3.png") no-repeat center center/cover;
   color: white;
@@ -72,7 +72,7 @@ nav {
 }
 
 .section-one-card {
-    width: 300px;
+    width: 220px;
     overflow: hidden;
 }
 
@@ -229,14 +229,14 @@ nav {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
     justify-content: center;
     padding: 0 50px;
 }
 
 .grid-item {
-    width: 300px;
+    width: 320px;
     background-color: #EFECEC;
     padding: 20px;
     border-radius: 10px;
@@ -608,7 +608,7 @@ nav {
 
 .team-list img {
     width: 200px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 .team-details {
@@ -707,11 +707,11 @@ nav {
 
 .footer-content span {
     position: fixed;
-    bottom: 20px;
+    bottom: 70px;
     right: 70px;
 }
 
 .footer-content img {
-    width: 50px;
+    width: 60px;
     cursor: pointer;
 }
