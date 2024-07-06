@@ -275,12 +275,13 @@ nav {
 /* TRAVEL HIGHLIGHTS */
 
 .video-section {
+    margin-inline: 0 !important;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-    background-color: #f4f4f4;
+    background-color: #e2e2e2;
 }
 
 .video-container {
