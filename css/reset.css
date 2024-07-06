@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scrollbar-width: none;
 }
 
 body {
@@ -16,12 +15,23 @@ body {
     line-height: normal;
 }
 
+html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
 :root {
     --orange-color: rgb(255, 165, 0);
     --secondary-color: rgb(255, 255, 255);
     --darkorange-color: rgb(255, 140, 0);
     --tertiary-color: rgb(0, 0, 0);
     --quaternary-color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
 }
 
 li {
@@ -59,13 +69,19 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
-/* main {
-    
-} */
+main {
+    margin-inline: 50px;
+}
+
 
 section {
-    margin-inline: 60px;
-    margin-bottom: 200px;
-    margin-top: 50px;
-    width: 100%;
+    margin-top: 65px;
+}
+
+section::before {
+    content: "";
+    display: block;
+    height: 100px; /* Height of the top margin you want */
+    margin-top: -60px; /* Negative margin to offset the scroll position */
+    visibility: hidden;
 }

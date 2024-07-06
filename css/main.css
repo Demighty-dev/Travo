@@ -1,6 +1,6 @@
 header {
   position: relative;
-  height: 100svh;
+  height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/images/image3.png") no-repeat center center/cover;
   color: white;
@@ -59,24 +59,35 @@ nav {
 
 /* ======  POPULAR TOUR PLACES ====== */
 
+/* .Popular-tour{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
 .Popular-tour h2 {
     padding-bottom: 30px;
     font-size: 2rem;
 }
 
 .section-one-card-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
 }
 
 .section-one-card {
-    width: 400px;
+    width: 300px;
     overflow: hidden;
 }
 
 .section-one-card img {
   width: 100%;
+  border-radius: 2px;
 }
 
 .section-one-card-body {
@@ -115,23 +126,24 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 40px;
     padding: 40px 0;
 }
 
 .sponsors-wrapper h2 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 
 .sponsors-logo {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 20px;
 }
 
 .sponsors-logo img {
-    width: 150px;
+    width: 100px;
 }
 
 
@@ -233,7 +245,7 @@ nav {
 }
 
 .grid-item {
-    width: 350px;
+    width: 300px;
     background-color: #EFECEC;
     padding: 20px;
     border-radius: 10px;
@@ -313,13 +325,402 @@ nav {
 }
 
 .play-button {
-    font-size: 4em;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 1.2em;
     color: orange;
     margin-bottom: 20px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
 }
 
 .video-text {
-    font-size: 1.5em;
+    font-size: 1rem;
     font-weight: bold;
+}
+
+
+/* Tour Gallery  */
+
+
+.tour-gallery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tour-gallery-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.tour-gallery-wrapper h2{
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+}
+
+.tour-gallery-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.tour-gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+
+/* TESTIMONIALS */
+
+.testimonials {
+    background: #FF9F1C;
+}
+
+.testimonials-header {
+    width: 100%;
+    margin-bottom: -20px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.testimonials-header p {
+    margin-bottom: 15px;
+    background-color: #fff;
+    width: 150px;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 20px;
+    counter-reset: #1E1E1E;
+    font-weight: 500;
+}
+
+.testimonials-header h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.testimonials {
+    background: #FF9F1C;
+}
+
+.outerdiv
+{
+	width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innerdiv
+{
+	transform: scale(0.9);
+	margin: 1rem;
+	display: grid;
+	grid-gap: 1.5rem;
+	grid-template-rows: repeat(2,22rem);
+	grid-template-columns: repeat(4,17rem);
+}
+.eachdiv
+{
+	padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 5px 5px 20px #6d6b6b6b;
+    color: white;
+}
+.div1
+{
+	background: #733FC8;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-image: url(https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 25rem;
+}
+.div2
+{
+	background:#49556B;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.div3
+{
+	background: white;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    color: black;
+}
+.div4
+{
+	background: white;
+	grid-column: 1/2;
+    grid-row: 2/3;
+    color: black;
+}
+.div5
+{
+	background: #18202D;
+	grid-column: 2/4;
+    grid-row: 2/3;
+}
+.userdetails
+{
+	display: flex;
+}
+.imgbox
+{
+	margin-right: 1rem;
+}
+.imgbox img
+{
+	border-radius: 50%;
+	width: 2rem;
+	border: 2px solid #cec5c5;
+}
+.detbox
+{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.detbox p
+{
+	margin: 0;
+}
+.detbox .name
+{
+	color: hsl(0, 0%, 81%);
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+}
+.detbox .name.dark
+{
+	color: #49505A;
+}
+.detbox .designation
+{
+	color: hsl(0, 0%, 81%);
+    opacity: 50%;
+    font-size: 0.8rem;
+}
+.detbox .designation.dark
+{
+	color: #49505A;
+}
+.review h4
+{
+	font-size: 1.4rem;
+	color: #F3DEFF;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+.review.dark h4{
+	color:#4B5258;
+}
+.review p
+{
+	font-size: 0.95rem;
+    color: #F3DEFF;
+    font-weight: 500;
+    opacity: 50%;
+    line-height: 1.5;
+}
+.review.dark p{
+	color: #0e0e0e;
+}
+.attribution
+{
+	font-size: 1rem;
+    line-height: 1.5;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    text-align: right;
+}
+.attribution a
+{
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px)
+{
+	.innerdiv
+	{
+		transform: scale(0.7);
+	}
+}
+@media only screen and (max-width: 800px)
+{
+	.innerdiv
+	{
+		transform: scale(0.6);
+	}
+}
+@media only screen and (max-width: 600px)
+{
+	.div1 {
+		background-position-x: 10rem;
+	}
+	.innerdiv
+	{
+		display: flex; 
+		flex-direction: column;
+		transform: scale(1);
+		margin: 2rem;
+		margin-bottom: 5rem;
+	}
+	.attribution
+	{
+		position: relative;
+	}
+}
+
+
+
+
+/* TEAM SECTION   */
+
+.team-wrapper {
+    width: 100%;
+    padding: 0 50px;
+    margin-bottom: 75px;
+}
+
+.team-wrapper h2 {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+}
+
+.team-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.team-list img {
+    width: 200px;
+    padding-bottom: 5px;
+}
+
+.team-details {
+    width: 200px;
+}
+
+.team-details h3 {
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.team-details p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+
+/* Interested to tour  */
+
+
+.tour-hero {
+    height: 90svh;
+}
+
+
+/* Contact Us Section  */
+
+.contact-section-wrapper {
+    padding: 0 50px;
+    margin-bottom: 80px;
+}
+
+.contact-section-wrapper h2 {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+}
+
+.contact-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-flex-item {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-flex-item img {
+    margin-top: -10px;
+}
+
+.contact-details {
+    width: 200px;
+    text-align: left;
+}
+
+.contact-details h3 {
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-details p {
+    font-size: 1rem;
+}
+
+
+/* FOOTER SECTION  */
+
+.footer {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #000;
+}
+
+.footer-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer-content span {
+    position: fixed;
+    bottom: 20px;
+    right: 70px;
+}
+
+.footer-content img {
+    width: 50px;
+    cursor: pointer;
 }
