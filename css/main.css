@@ -70,7 +70,66 @@ nav {
 
 /* ======  POPULAR TOUR PLACES ====== */
 
+
 .Popular-tour h2 {
+    padding-bottom: 30px;
+    font-size: 2rem;
+    text-align: center; /* Center align the heading */
+}
+
+.section-one-card-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    gap: 20px; /* Add gap between cards */
+    justify-content: center; /* Center align cards horizontally */
+}
+
+.section-one-card {
+    width: calc(50% - 20px); /* Two cards per row with some gap */
+    max-width: 300px; /* Maximum width of each card */
+    overflow: hidden;
+    border: 1px solid #ddd; /* Add a border for clarity */
+    border-radius: 8px; /* Rounded corners for cards */
+    margin-bottom: 20px; /* Add some space below each card */
+}
+
+.section-one-card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.section-one-card-body {
+    padding: 20px;
+}
+
+.section-one-card-body h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Add space below the title */
+}
+
+.section-one-card-body p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px; /* Add space below paragraphs */
+}
+
+.section-one-card-cost {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--orange-color);
+}
+
+.section-one-card-cost span {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+
+/* .Popular-tour h2 {
     padding-bottom: 30px;
     font-size: 2rem;
 }
@@ -119,11 +178,43 @@ nav {
     color: #000;
     font-size: 1rem;
     margin-left: 10px;
-}
+} */
+
+
 
 
 /* OUR PROUD SPONSORS  */
 
+
+.sponsors-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+    text-align: center; /* Center align text */
+}
+
+.sponsors-wrapper h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px; /* Add space below heading */
+}
+
+.sponsors-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align logos horizontally */
+    gap: 20px;
+}
+
+.sponsors-logo img {
+    width: 100px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* 
 .sponsors-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -146,11 +237,115 @@ nav {
 
 .sponsors-logo img {
     width: 100px;
-}
+} */
+
+
 
 
 /* WHO WE ARE  */
 
+
+
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center align text */
+    padding: 80px 0; /* Add padding for spacing */
+}
+
+.about-us-container .about-us-heading {
+    font-size: 1.5rem; /* Increase font size for heading */
+    padding-bottom: 30px; /* Reduce padding for heading */
+}
+
+.about-us-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    gap: 40px; /* Add gap between sections */
+    justify-content: center; /* Center align items horizontally */
+}
+
+.about-us-image {
+    position: relative;
+    width: 100%; /* Adjust width for responsiveness */
+    max-width: 400px; /* Limit maximum width */
+    text-align: center; /* Center align content */
+}
+
+.img-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 290px;
+    height: 340px;
+    border-radius: 12px; /* Adjust border radius */
+    background: #0E1E5E;
+    z-index: -1;
+}
+
+.about-us-image img {
+    width: 100%; /* Make image responsive */
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.about-us-image > div:last-child {
+    position: relative; /* Change to relative for stacking */
+    background-color: #fff;
+    padding: 15px 20px; /* Adjust padding */
+    border-radius: 12px; /* Adjust border radius */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add slight shadow */
+    margin-top: -30px; /* Adjust margin */
+    text-align: left; /* Align text to left */
+}
+
+.about-us-image > div > h2 {
+    font-size: 1.2rem; /* Adjust font size */
+    margin-bottom: 8px; /* Add space below heading */
+}
+
+.about-us-image > div > p {
+    font-size: 0.9rem; /* Adjust font size */
+    font-weight: 500; /* Adjust font weight */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.about-us-text {
+    max-width: 600px; /* Limit maximum width */
+    text-align: left; /* Align text to left */
+    font-size: 1rem; /* Adjust font size */
+    line-height: 1.6; /* Adjust line height */
+    margin-top: 20px; /* Add top margin */
+}
+
+.about-us-text p {
+    margin-bottom: 20px; /* Add bottom margin */
+}
+
+.about-us-text #btn {
+    display: inline-block; /* Ensure button displays inline */
+    font-size: 1rem; /* Adjust font size */
+    padding: 12px 30px; /* Adjust padding */
+    background-color: #FFA500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.about-us-text #btn:hover {
+    background-color: #FF7F00;
+}
+
+
+
+
+/* 
 .about-us-container {
     display: flex;
     flex-direction: column;
@@ -223,10 +418,77 @@ nav {
 
 .about-us-text #btn{
     float: right;
-}
+} */
+
+
+
 
 
 /* Our Features */
+
+
+.features {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted minmax value */
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px; /* Reduced padding for smaller screens */
+}
+
+.grid-item {
+    background-color: #EFECEC;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute content evenly */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
+}
+
+.grid-item img {
+    width: 40px; /* Increased image size */
+    height: auto;
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.grid-item h3 {
+    font-size: 1.2rem; /* Adjusted font size */
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 1rem; /* Adjusted font size */
+    color: #555;
+    line-height: 1.5; /* Improved line height */
+    margin-bottom: 15px; /* Increased margin */
+}
+
+.grid-item .price {
+    color: orange;
+    font-weight: bold;
+}
+
+.grid-item .old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 5px; /* Reduced margin */
+}
+
+
+
+
+/* 
 
 .features {
     padding: 50px 0;
@@ -284,7 +546,7 @@ nav {
     color: #888;
     margin-left: 10px;
 }
-
+ */
 
 /* TRAVEL HIGHLIGHTS */
 
@@ -748,7 +1010,7 @@ nav {
  .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 100; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%;

@@ -1,0 +1,35 @@
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide the nav links by default */
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the nav links when active */
+    }
+
+    .nav-links a {
+        padding: 15px 0;
+        width: 100%;
+        display: block;
+    }
+
+    .burger {
+        display: block;
+        color: white;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .burger i {
+        margin-top: 10px;
+    }
+}
