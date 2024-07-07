@@ -1082,6 +1082,52 @@ nav {
 /* Contact Us Section  */
 
 .contact-section-wrapper {
+    padding: 0 50px; /* Adjusted padding for better spacing */
+    margin-bottom: 80px;
+}
+
+.contact-section-wrapper h2 {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+}
+
+.contact-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap; /* Added flex-wrap for responsive design */
+    gap: 30px; /* Adjusted gap for better spacing */
+}
+
+.contact-flex-item {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-flex-item img {
+    margin-top: -10px; /* Ensure this adjustment works across different screens */
+}
+
+.contact-details {
+    width: 200px;
+    text-align: left;
+}
+
+.contact-details h3 {
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-details p {
+    font-size: 1rem;
+}
+
+
+
+/* 
+.contact-section-wrapper {
     padding: 0 50px;
     margin-bottom: 80px;
 }
@@ -1122,7 +1168,7 @@ nav {
 
 .contact-details p {
     font-size: 1rem;
-}
+} */
 
 
 /* FOOTER SECTION  */
