@@ -16,7 +16,7 @@
 }
 
 
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 895px) {
 
     header nav {
         padding: 80px 70px;
@@ -28,7 +28,7 @@
     }
 
     .hero h1 {
-        font-size: 5em;
+        font-size: 4rem;
     }
       
     .hero p {
@@ -36,9 +36,9 @@
     }
 
     .hero #btn {
-        font-size: 2em;
+        font-size: 1.5rem;
         border-radius: 40px;
-        padding: 30px 100px;
+        padding: 15px 40px;
     }
 
     .nav-links {
@@ -54,7 +54,7 @@
     }
 
     .logo img {
-        width: 170px; 
+        width: 140px; 
     }
 
     .sidebar ul {
@@ -75,11 +75,11 @@
     }
 
     .sidebar ul li a {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .hamburger .fa-bars {
-        font-size: 50px;
+        font-size: 40px;
     }
 
 
@@ -112,7 +112,7 @@
 }
 
 
-@media only screen and (max-width: 884px) { 
+@media only screen and (max-width: 84px) { 
     
 }
 
@@ -161,13 +161,6 @@
 
     .sidebar ul li a {
         font-size: 21px !important;
-    }
-
-    header .sidebar .sidebar-btn {
-        font-size: 15px !important;
-        margin-left: 35px;
-        border-radius: 50px !important;
-        padding: 20px 40px !important;
     }
 }
 
@@ -252,20 +245,9 @@
     .logo img {
         width: 100px; 
     }
-    
-    .sidebar-btn {
-        margin-left: 35px;
-    }
 
     .sidebar ul li a {
         font-size: 22px;
-    }
-
-    header .sidebar-btn {
-        font-size: 15px !important;
-        margin-left: 10px;
-        border-radius: 50px !important;
-        padding: 30px 70px !important;
     }
 
     .hamburger .fa-bars {
