@@ -85,7 +85,7 @@ section {
 section::before {
     content: "";
     display: block;
-    height: 100px; /* Height of the top margin you want */
-    margin-top: -60px; /* Negative margin to offset the scroll position */
+    height: 100px; 
+    margin-top: -60px; 
     
 }
