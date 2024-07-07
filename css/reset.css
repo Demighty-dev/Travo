@@ -10,7 +10,7 @@
 body {
     font-family: "Inter";
     background-color: #F6F4F3;
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -50,6 +50,7 @@ h1, h2, h3, h4, h5, h6, p {
 .logo img {
     width: 100px; 
     cursor: pointer;
+    margin-top: 5px;
 }
 
 #btn {
@@ -60,6 +61,7 @@ h1, h2, h3, h4, h5, h6, p {
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    margin-top: 20px;
 }
 
 #btn:hover {
@@ -70,18 +72,20 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 main {
-    margin-inline: 50px;
+    margin-inline: 10px;
 }
 
 
 section {
-    margin-top: 65px;
+    margin-top: 30px;
 }
+
+
 
 section::before {
     content: "";
     display: block;
     height: 100px; /* Height of the top margin you want */
     margin-top: -60px; /* Negative margin to offset the scroll position */
-    visibility: hidden;
+    
 }

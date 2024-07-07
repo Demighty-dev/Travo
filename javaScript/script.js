@@ -1,3 +1,57 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const faClose = document.getElementById('fa-close');
+  const sidebar = document.getElementById('sidebar');
+  const body = document.querySelector('body');
+
+  // Toggle sidebar visibility on hamburger click
+  hamburger.addEventListener('click', () => {
+      sidebar.classList.toggle('show');
+  });
+
+   // Toggle sidebar visibility on hamburger click
+   faClose.addEventListener('click', () => {
+       sidebar.classList.toggle('show');
+  });
+
+  // Close sidebar when a link inside it is clicked
+  sidebar.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+          sidebar.classList.remove('show');
+      }
+  });
+
+  // Close sidebar when clicking anywhere outside it
+  body.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
+          sidebar.classList.remove('show');
+      }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Event to make the page scrolls up when clicked
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -58,3 +112,18 @@ document.addEventListener('DOMContentLoaded', function() {
      registrationModal.style.display = "none";
      thankYouModal.style.display = "block";
    }
+
+
+   window.addEventListener('scroll', function() {
+    const nav = document.getElementById('nav');
+    if (window.scrollY > 0) {
+        nav.style.position = 'fixed';
+        nav.style.width = 100;
+        nav.style.backgroundColor = 'var(--tertiary-color)'
+        
+    } else {
+        nav.style.position = '';
+        nav.style.backgroundColor = ''
+    }
+});
+

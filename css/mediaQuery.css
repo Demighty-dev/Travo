@@ -33,3 +33,24 @@
         margin-top: 10px;
     }
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .sidebar.show {
+        display: block;
+        transform: translateX(0);
+    }
+
+    .nav-btn {
+        display: none;
+    }
+}
