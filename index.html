@@ -28,14 +28,46 @@
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
-            <a href="#" id="btn">Get Started</a>
+            <a href="#" id="btn" class="btn">Get Started</a>
         </nav>
         <div class="hero">
             <h1>Enjoy Vacation with <span>Travo</span></h1>
             <p>Travel to any corner of the world, without going around in circles.</p>
-            <a href="#" id="btn">Book A Tour</a>
+            <a id="btn" class="btn">Book A Tour</a>
         </div>
     </header>
+
+<!-- The Registration Modal -->
+<div id="registrationModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Registration Form</h2>
+      <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+  
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+  
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  
+<!-- The Thank You Modal -->
+<div id="thankYouModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Thank You!</h2>
+      <p>You will receive an email from us for further assistance.</p>
+    </div>
+  </div>
     
     <div class="container">
         <!-- ======  POPULAR TOUR PLACES ======  -->
@@ -90,12 +122,13 @@
                     <h2>OUR PROUD SPONSORS</h2>
                     <div class="sponsors">
                         <div class="sponsors-logo">
+                            <img src="./images/image 33.png" alt="">
                             <img src="./images/Frame 23.png" alt="">
-                            <img src="./images/Frame 23.png" alt="">
-                            <img src="./images/Frame 23.png" alt="">
-                            <img src="./images/Frame 23.png" alt="">
-                            <img src="./images/Frame 23.png" alt="">
-                            <img src="./images/Frame 23.png" alt="">
+                            <img src="./images/image 33 (1).png" alt="">
+                            <img src="./images/therma.png" alt="">
+                            <img src="./images/image 33 (2).png" alt="">
+                            <img src="./images/image 33 (3).png" alt="">
+                            <img src="./images/image 33 (4).png" alt="">
                         </div>
                     </div>
                 </div>
@@ -335,7 +368,7 @@
             <div class="hero ">
                 <h1>Are You Still interested to Tour?</h1>
                 <p>We Offer A Wide Range Of Procedures To Help You Get The Perfect Smile</p>
-                <a href="#" id="btn">Book A Tour</a>
+                <a id="btn" class="btn" >Book A Tour</a>
             </div>
         </header>
 
