@@ -645,6 +645,175 @@ nav {
 
 /* TESTIMONIALS */
 
+
+.testimonials {
+    background: #FF9F1C;
+    padding: 50px 0; /* Added padding for better spacing */
+}
+
+.testimonials-header {
+    margin-bottom: 20px; /* Adjusted margin for spacing */
+    padding: 30px 0;
+    text-align: center;
+}
+
+.testimonials-header p {
+    margin-bottom: 15px;
+    background-color: #fff;
+    width: 150px;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.testimonials-header h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.outerdiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.innerdiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid columns */
+    grid-gap: 1.5rem;
+    transform: scale(0.9); /* Initial scaling */
+}
+
+.eachdiv {
+    padding: 1rem;
+    border-radius: 0.8rem;
+    box-shadow: 5px 5px 20px #6d6b6b6b;
+    color: white;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.userdetails {
+    display: flex;
+    align-items: center;
+}
+
+.imgbox {
+    margin-right: 1rem;
+}
+
+.imgbox img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #cec5c5;
+}
+
+.detbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detbox p {
+    margin: 0;
+}
+
+.detbox .name {
+    color: hsl(0, 0%, 81%);
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+}
+
+.detbox .name.dark {
+    color: #49505A;
+}
+
+.detbox .designation {
+    color: hsl(0, 0%, 81%);
+    opacity: 50%;
+    font-size: 0.8rem;
+}
+
+.detbox .designation.dark {
+    color: #49505A;
+}
+
+.review h4 {
+    font-size: 1.2rem;
+    color: #F3DEFF;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+
+.review.dark h4 {
+    color: #4B5258;
+}
+
+.review p {
+    font-size: 0.95rem;
+    color: #F3DEFF;
+    font-weight: 500;
+    opacity: 50%;
+    line-height: 1.5;
+}
+
+.review.dark p {
+    color: #0e0e0e;
+}
+
+.attribution {
+    font-size: 1rem;
+    line-height: 1.5;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    text-align: right;
+}
+
+.attribution a {
+    text-decoration: none;
+}
+
+/* Media queries for responsive design */
+
+@media only screen and (max-width: 1000px) {
+    .innerdiv {
+        transform: scale(0.7); /* Adjusted scaling for medium screens */
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .innerdiv {
+        transform: scale(0.6); /* Adjusted scaling for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .div1 {
+        background-position-x: 10rem; /* Adjusted background position for smaller screens */
+    }
+    .innerdiv {
+        display: flex; /* Flex layout for smaller screens */
+        flex-direction: column;
+        transform: scale(1); /* Reset scaling */
+        margin: 2rem;
+        margin-bottom: 5rem;
+    }
+    .attribution {
+        position: relative; /* Adjusted attribution position */
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
+
+
+
+/* 
 .testimonials {
     background: #FF9F1C;
 }
@@ -851,7 +1020,7 @@ nav {
 	{
 		position: relative;
 	}
-}
+} */
 
 
 
