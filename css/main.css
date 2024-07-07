@@ -1027,6 +1027,50 @@ nav {
 
 /* TEAM SECTION   */
 
+
+.team-wrapper {
+    width: 100%;
+    padding: 0 50px; /* Adjusted padding for better spacing */
+    margin-bottom: 75px;
+}
+
+.team-wrapper h2 {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+}
+
+.team-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap; /* Added flex-wrap for responsive design */
+    gap: 20px; /* Adjusted gap for better spacing */
+}
+
+.team-list img {
+    width: 200px; /* Fixed width for team member images */
+    padding-bottom: 15px;
+}
+
+.team-details {
+    width: 200px;
+}
+
+.team-details h3 {
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.team-details p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+/* 
 .team-wrapper {
     width: 100%;
     padding: 0 50px;
@@ -1067,7 +1111,7 @@ nav {
     font-size: 1rem;
     font-weight: 500;
 }
-
+ */
 
 
 
