@@ -351,49 +351,6 @@
         font-size: .7rem;
         font-weight: 500;
     }
-
-/* 
-
-    .team-wrapper {
-        width: 100%;
-        padding: 0 50px;
-        margin-bottom: 75px;
-    }
-    
-    .team-wrapper h2 {
-        font-size: 1.6rem;
-        margin-bottom: 40px;
-    }
-    
-    .team-gallery {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        flex-wrap: wrap; 
-        gap: 20px; 
-    }
-    
-    .team-list img {
-        width: 200px; 
-        padding-bottom: 15px;
-    }
-    
-    .team-details {
-        width: 200px;
-    }
-    
-    .team-details h3 {
-        font-size: 1.3rem;
-        padding-bottom: 5px;
-        font-weight: bold;
-    }
-    
-    .team-details p {
-        font-size: 1rem;
-        font-weight: 500;
-    }
-     */
     
 }
 
@@ -461,4 +418,11 @@
     }
     
 
+}
+
+
+@media (orientation: landscape) {
+    .nav-btn {
+        display: none;
+    }
 }
