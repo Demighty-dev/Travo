@@ -603,9 +603,15 @@ nav {
     gap: 20px; 
 }
 
-.team-list img {
+.team-list > div{
     width: 200px; 
     padding-bottom: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.team-list img {
+    width: 100%; 
 }
 
 .team-details {
