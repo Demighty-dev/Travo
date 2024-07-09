@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// Event to make the page scrolls up when clicked
+// Event to make the page scrolls up when arrow icon is clicked
 
 document.addEventListener('DOMContentLoaded', function() {
     var arrowUp = document.getElementById('arrow-up');
@@ -45,23 +45,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-  // Get the modals
-  var registrationModal = document.getElementById("registrationModal");
-  var thankYouModal = document.getElementById("thankYouModal");
-
-  // Get all buttons that open the registration modal
-  var btns = document.querySelectorAll(".btn");
-
-  // Get the <span> elements that close the modals
-  var spans = document.querySelectorAll(".close");
+// Get the modals
+var registrationModal = document.getElementById("registrationModal");
+var thankYouModal = document.getElementById("thankYouModal");
+var btns = document.querySelectorAll(".btn");
+var spans = document.querySelectorAll(".close");
 
    // When the user clicks any button, open the registration modal 
+
 btns.forEach((btn) => {
-     btn.onclick = (event) => {
-       event.preventDefault();
-       registrationModal.style.display = "block";
-     }
+  btn.onclick = (event) => {
+    setTimeout(() => {
+      event.preventDefault();
+    registrationModal.style.display = "block";
+    }, 1000);
+  }
 });
+
 
    // When the user clicks on <span> (x), close the modal
 spans.forEach(span => {
@@ -83,12 +83,15 @@ window.onclick = function(event) {
 
    // Handle form submission
 var form = document.getElementById("registrationForm");
-   form.onsubmit = function(event) {
-     event.preventDefault();
-     registrationModal.style.display = "none";
-     thankYouModal.style.display = "block";
+var submitBtn = document.getElementById("submitBtn");
+form.onsubmit = function(event) {
+  event.preventDefault();
+  submitBtn.textContent = 'Please wait...'
+  setTimeout(() => {
+    registrationModal.style.display = "none";
+    thankYouModal.style.display = "block";
+  }, 2500);
 }
-
 
 window.addEventListener('scroll', function() {
     const nav = document.getElementById('nav');
